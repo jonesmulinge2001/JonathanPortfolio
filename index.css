@@ -126,7 +126,12 @@ body{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-   
+    box-shadow: 0 4px 12px rgba(211, 209, 209, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+
 }
 .container > .Featuredprojects > .projects > .project > img{
     width: 15rem;
@@ -134,3 +139,75 @@ body{
     border-radius: 10px;
     cursor: pointer;
 }
+.container > .Featuredprojects > .projects > .project > h1{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.container > .Featuredprojects > .projects > .project > p{
+    color: #9ca3af;
+    font-size: 18px;
+}
+.container > .Featuredprojects > .projects > .project:hover{
+    transform: scale(1.1);
+}
+.container > .Featuredprojects > .projects > .project:hover > h1{
+    color: #03d2ff;
+}
+.container > .techArsenal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.container > .techArsenal > h1{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.container > .techArsenal > h1 > span {
+    display: inline-block;                    /* make sure gradient can move */
+    background: linear-gradient(
+      90deg,
+      #04cffe,
+      #0417e7
+    );
+    background-size: 200% auto;               /* allow room to animate */
+    -webkit-background-clip: text;            /* clip gradient to text */
+    -webkit-text-fill-color: transparent;     /* hide the fill so gradient shows */
+            background-clip: text;            /* for non‑WebKit browsers */
+            color: transparent;
+  
+    animation: gradientShift 3s ease infinite;
+    /* you can also add -webkit-animation: gradientShift 3s ease infinite; */
+  }
+  
+  /* Define the keyframes */
+  @keyframes gradientShift {
+    0%   { background-position: 0% center; }
+    50%  { background-position: 100% center; }
+    100% { background-position: 0% center; }
+  }
+  
+  /* For maximum WebKit support (older Safari/Chrome) */
+  @-webkit-keyframes gradientShift {
+    0%   { background-position: 0% center; }
+    50%  { background-position: 100% center; }
+    100% { background-position: 0% center; }
+  }
+
+.container > .techArsenal > .techs{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .container > .techArsenal > .techs > p{
+    padding: 10px 20px;
+    border: 2px solid #2f2f2f;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: all ease-in-out 0.3s;
+  }
+  .container > .techArsenal > .techs > p:hover{
+    background-color: #a7a0a0;
+    
+  }
