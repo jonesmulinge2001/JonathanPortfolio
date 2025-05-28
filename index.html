@@ -13,11 +13,11 @@
                 <h1 id="logo">JM NextLevel</h1>
             </div>
             <div class="menus">
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Experience</li>
-                <li>Contact</li>
+                <li id="home">Home</li>
+                <li id="about"  onclick="scrollToAbout('about')">About</li>
+                <li id="projects">Projects</li>
+                <li id="experience">Experience</li>
+                <li id="contact">Contact</li>
             </div>
         </div>
         <div class="landingpage">
@@ -77,9 +77,53 @@
         <div class="footer">
             <h1>Let's create something <span>Amaizing</span></h1>
             <p>Ready to turn your ideas into reality? Let's discuss how we can bring your vision to life.</p>
-            <button>start a conversation</button>
+            <button id="contactButton">start a conversation</button>
         </div>
     </div>
+
+        <!-- about component -->
+    <div class="about" id="about">
+        <div class="top">
+            <div class="me">
+                <h1>About Me</h1>
+            </div>
+            <div class="description">
+                <p>I'm a passionate full stack Java developer with strong front-end skills and a flair for design and content creation. I blend code and creativity to build performant and beautiful digital experiences.
+                    I love turning complex problems into elegant solutions, always striving to create applications that are not only functional but also aesthetically pleasing and user-friendly.</p>
+                <img src="/images/laptop1.jpg" alt="">
+            </div>
+        </div>
+        <div class="middle">
+            <div class="card">
+                <p>🚀</p>
+                <h1>Innovation</h1>
+                <h3>Always exploring new technologies and pushing the boundaries of what's possible.</h3>
+            </div>
+            <div class="card">
+                <p>🎨</p>
+                <h1>Design</h1>
+                <h3>Combining technical expertise with creative vision to deliver exceptional user experiences.</h3>
+            </div>
+            <div class="card">
+                <p>⚡</p>
+                <h1>Performance</h1>
+                <h5>Building fast, scalable applications with clean, maintainable code.</h5>
+            </div>
+        </div>
+        <div class="bottom">
+            <h1>My Journey</h1>
+            <p>
+                My journey has been one of passion, growth, and continuous learning. From the early days of exploring programming concepts to becoming a skilled software engineer, each step has shaped who I am today. I started with curiosity and a drive to solve problems, which led me to master languages like JavaScript, Python, and frameworks such as Angular and Node.js.
+                Building projects like **Academeet**, an ecosystem designed to empower students through connection and success, reflects my commitment to creating impactful solutions. Using modern technologies like Angular, Tailwind CSS, NestJS, and PostgreSQL, I am turning ideas into reality while constantly expanding my technical expertise.
+                Beyond coding, my journey is about embracing challenges, collaborating with others, and striving for excellence. Every bug fixed, every feature implemented, and every new skill acquired is a step toward my goal: to make a meaningful difference through technology.
+                </p>
+        </div>
+        <div class="more">
+            <p>Want to see more?</p>
+            <p id="check">Check out my GitHub for more projects and contributions</p>
+            <a href="https://github.com/jonesmulinge2001/">GitHub</a>
+        </div>
+     </div>
     <script src="/dist/index.js"></script>
 </body>
 </html>
