@@ -1,129 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Jonathan Mulinge</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <h1 id="logo">JM NextLevel</h1>
-            </div>
-            <div class="menus">
-                <li id="home">Home</li>
-                <li id="about"  onclick="scrollToAbout('about')">About</li>
-                <li id="projects">Projects</li>
-                <li id="experience">Experience</li>
-                <li id="contact">Contact</li>
-            </div>
-        </div>
-        <div class="landingpage">
-            <div class="mydetails">
-                <h1>Jonathan</h1>
-                <h1>Mulinge</h1>
-                <p>Full stack software engineer and creative technologist <br>
-                <span>blending code and creativity</span></p>
-            </div>
-            <div class="actionButtons">
-                <button>View my work</button>
-                <button>get in touch</button>
-            </div>
-        </div>
-        <div class="Featuredprojects">
-            <div class="intro">
-                <h1>featured projects</h1>
-                <p>exploring the intersection of technology and creativity through innovative solutions</p>
-            </div>
-            <div class="projects">
-                <div class="project">
-                    <img src="/images/grade.jpg" alt="">
-                    <h1>Student Grade Track System</h1>
-                    <p>The Student Grade Track System simplifies grading by recording, calculating, and displaying student performance, helping educators manage assessments efficiently.
-                    </p>
-                </div>
-                <div class="project">
-                    <img src="/images/grade.jpg" alt="">
-                    <h1>Student Grade Track System</h1>
-                    <p>The Student Grade Track System simplifies grading by recording, calculating, and displaying student performance, helping educators manage assessments efficiently.
-                    </p>
-                </div>
-                <div class="project">
-                    <img src="/images/task.jpg" alt="">
-                    <h1>Student Grade Track System</h1>
-                    <p>The Student Grade Track System simplifies grading by recording, calculating, and displaying student performance, helping educators manage assessments efficiently.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="techArsenal">
-            <h1>Tech <span>Arsenal</span> </h1>
-            <div class="techs">
-                <p>JavaScript</p>
-                <p>TypeScript</p>
-                <p>React js</p>
-                <p>Angular js</p>
-                <p>Express js</p>
-                <p>Node js</p>
-                <p>Nest js</p>
-                <p>SQL</p>
-                <p>HTML</p>
-                <p>TailwindCSS</p>
-                <p>Git</p>
-            </div>
-        </div>
-        <div class="footer">
-            <h1>Let's create something <span>Amaizing</span></h1>
-            <p>Ready to turn your ideas into reality? Let's discuss how we can bring your vision to life.</p>
-            <button id="contactButton">start a conversation</button>
-        </div>
+  <div class="container">
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="logo">
+        <h1 id="logo">JM NextLevel</h1>
+      </div>
+      <ul class="menus">
+        <li id="home">Home</li>
+        <li id="about" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">About</li>
+        <li id="projects">Projects</li>
+        <li id="experience">Experience</li>
+        <li id="contact">Contact</li>
+      </ul>
     </div>
 
-        <!-- about component -->
-    <div class="about" id="about">
-        <div class="top">
-            <div class="me">
-                <h1>About Me</h1>
-            </div>
-            <div class="description">
-                <p>I'm a passionate full stack Java developer with strong front-end skills and a flair for design and content creation. I blend code and creativity to build performant and beautiful digital experiences.
-                    I love turning complex problems into elegant solutions, always striving to create applications that are not only functional but also aesthetically pleasing and user-friendly.</p>
-                <img src="/images/laptop1.jpg" alt="">
-            </div>
+    <!-- Landing Page -->
+    <div class="landingpage">
+      <div class="mydetails">
+        <h1>Jonathan</h1>
+        <h1>Mulinge</h1>
+        <p>Full stack software engineer and creative technologist <br>
+        <span>blending code and creativity</span></p>
+      </div>
+      <div class="actionButtons">
+        <button>View my work</button>
+        <button>Get in touch</button>
+      </div>
+    </div>
+
+    <!-- Featured Projects -->
+    <div class="Featuredprojects">
+      <div class="intro">
+        <h1>Featured Projects</h1>
+        <p>Exploring the intersection of technology and creativity through innovative solutions</p>
+      </div>
+      <div class="projects">
+        <div class="project">
+          <img src="/images/grade.jpg" alt="Grade System">
+          <h1>Student Grade Track System</h1>
+          <p>Simplifies grading by recording, calculating, and displaying student performance.</p>
         </div>
-        <div class="middle">
-            <div class="card">
-                <p>🚀</p>
-                <h1>Innovation</h1>
-                <h3>Always exploring new technologies and pushing the boundaries of what's possible.</h3>
-            </div>
-            <div class="card">
-                <p>🎨</p>
-                <h1>Design</h1>
-                <h3>Combining technical expertise with creative vision to deliver exceptional user experiences.</h3>
-            </div>
-            <div class="card">
-                <p>⚡</p>
-                <h1>Performance</h1>
-                <h5>Building fast, scalable applications with clean, maintainable code.</h5>
-            </div>
+        <div class="project">
+          <img src="/images/grade.jpg" alt="Grade System">
+          <h1>Student Grade Track System</h1>
+          <p>Simplifies grading by recording, calculating, and displaying student performance.</p>
         </div>
-        <div class="bottom">
-            <h1>My Journey</h1>
-            <p>
-                My journey has been one of passion, growth, and continuous learning. From the early days of exploring programming concepts to becoming a skilled software engineer, each step has shaped who I am today. I started with curiosity and a drive to solve problems, which led me to master languages like JavaScript, Python, and frameworks such as Angular and Node.js.
-                Building projects like **Academeet**, an ecosystem designed to empower students through connection and success, reflects my commitment to creating impactful solutions. Using modern technologies like Angular, Tailwind CSS, NestJS, and PostgreSQL, I am turning ideas into reality while constantly expanding my technical expertise.
-                Beyond coding, my journey is about embracing challenges, collaborating with others, and striving for excellence. Every bug fixed, every feature implemented, and every new skill acquired is a step toward my goal: to make a meaningful difference through technology.
-                </p>
+        <div class="project">
+          <img src="/images/task.jpg" alt="Task System">
+          <h1>Task Manager</h1>
+          <p>Helps assign, unassign, and track progress of tasks among users.</p>
         </div>
-        <div class="more">
-            <p>Want to see more?</p>
-            <p id="check">Check out my GitHub for more projects and contributions</p>
-            <a href="https://github.com/jonesmulinge2001/">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Tech Arsenal -->
+    <div class="techArsenal">
+      <h1>Tech <span>Arsenal</span></h1>
+      <div class="techs">
+        <p>JavaScript</p><p>TypeScript</p><p>React js</p><p>Angular js</p>
+        <p>Express js</p><p>Node js</p><p>Nest js</p><p>SQL</p>
+        <p>HTML</p><p>TailwindCSS</p><p>Git</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <h1>Let's create something <span>Amazing</span></h1>
+      <p>Ready to turn your ideas into reality?</p>
+      <button id="contactButton">Start a Conversation</button>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="about" id="about">
+    <div class="top">
+      <div class="me"><h1>About Me</h1></div>
+      <div class="description">
+        <p>I blend code and creativity to build performant and beautiful digital experiences...</p>
+        <img src="/images/laptop1.jpg" alt="Laptop Work">
+      </div>
+    </div>
+    <div class="middle">
+      <div class="card">
+        <p>🚀</p>
+        <h1>Innovation</h1>
+        <h3>Exploring new tech and pushing boundaries.</h3>
+      </div>
+      <div class="card">
+        <p>🎨</p>
+        <h1>Design</h1>
+        <h3>Delivering exceptional user experiences.</h3>
+      </div>
+      <div class="card">
+        <p>⚡</p>
+        <h1>Performance</h1>
+        <h3>Fast and scalable apps with clean code.</h3>
+      </div>
+    </div>
+    <div class="bottom">
+      <h1>My Journey</h1>
+      <p>From curiosity to professional developer. Projects like <b>Academeet</b> showcase my impact.</p>
+    </div>
+    <div class="more">
+      <p>Want to see more?</p>
+      <a href="https://github.com/jonesmulinge2001/" target="_blank">Check GitHub</a>
+    </div>
+  </div>
+
+  <!-- Experience Section -->
+  <div class="experience">
+    <div class="exp">
+      <h1>Experience</h1>
+      <p>Professional journey and expertise.</p>
+    </div>
+    <div class="professional">
+      <div class="experience-card">
+        <h3>Full Stack TypeScript Intern</h3>
+        <p class="company">Teach2Give, Nyeri — 2025 - Present</p>
+        <p>Built applications using Angular and TypeScript.</p>
+      </div>
+      <div class="experience-card">
+        <h3>Full Stack TypeScript Intern</h3>
+        <p class="company">Teach2Give, Nyeri — 2025 - Present</p>
+        <p>Hands-on frontend and database integration work.</p>
+      </div>
+      <div class="more">
+        <h2>Want to Know More?</h2>
+        <button class="download-btn">Download Resume</button>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+      <h1>Let us connect</h1>
+      <p>Let's bring your ideas to life.</p>
+      <div class="left">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" name="name">
+          <label for="email">Email</label>
+          <input type="email" name="email">
+          <label for="message">Message</label>
+          <textarea name="message"></textarea>
+        </form>
+      </div>
+      <div class="right">
+        <h1>Get In Touch</h1>
+        <p>Email: jonathanmulingemwandi@gmail.com</p>
+        <p>Phone: +254 79050 7703</p>
+        <div class="social">
+          <h2>Social Links</h2>
+          <a href="https://www.linkedin.com/in/jonathan-mwandi-359b92290/">LinkedIn</a>
+          <a href="https://github.com/jonesmulinge2001/">GitHub</a>
         </div>
-     </div>
-    <script src="/dist/index.js"></script>
+      </div>
+    </div>
+  </div>
+
+  <script src="/dist/index.js"></script>
 </body>
 </html>

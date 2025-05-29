@@ -1,3 +1,5 @@
+
+
 *{
     padding: 0;
     margin: 0;
@@ -11,6 +13,13 @@ body{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+}
+.container > .light{
+  margin-top: 5rem;
+}
+.container > .light > .dropdown > .dropdown-item a{
+  color: aliceblue;
+  background-color: red;
 }
 .container > .navbar{
     color: #fff;
@@ -357,3 +366,215 @@ body{
     background: #08323b;
     color: aliceblue;
   }
+  /* Container */
+.experience {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro section */
+.exp {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.exp h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.exp p {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Professional section */
+.professional > h2 {
+  font-size: 28px;
+  color: #2d3436;
+  border-bottom: 2px solid #3498db;
+  display: inline-block;
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+}
+
+/* Experience cards */
+.experience-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-left: 6px solid #3498db;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.experience-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.experience-card h3 {
+  font-size: 20px;
+  color: #2980b9;
+  margin-bottom: 5px;
+}
+
+.company {
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.experience-card p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Resume download section */
+.more {
+  background-color: #eef3f7;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.more h2 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.more p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.download-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #217dbb;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px 20px;
+  background: #f7f9fc;
+  border-top: 1px solid #e0e0e0;
+  gap: 40px;
+  animation: fadeInBody 1.2s ease-in;
+}
+
+.contact h1 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact .left,
+.contact .right {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+form input,
+form textarea {
+  margin-bottom: 20px;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fdfdfd;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Right side contact details */
+.right h2 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.social {
+  margin-top: 15px;
+}
+
+.social a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .contact .left,
+  .contact .right {
+    max-width: 100%;
+  }
+}
+
